@@ -1,0 +1,53 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	int x,y;
+	double z = 2.5, V; 
+	
+	cout << "Enter the value of x: "; 
+  cin >> x;
+	cout << "Enter the value of y: ";
+	cin >> y;
+	
+	switch (x)
+	{	
+		case 1:
+		if (y > 1 && y < 5)
+		{
+		V = x*y*z;
+		cout << "\nThe value of V is " << V << "!" << endl;
+		}	
+			else 
+			{
+			V = x + (y / z);
+			cout << "\nThe value of V is " << V << "!" << endl;
+			}
+			break;
+		
+		case 2:
+		if (y <= 5)
+			{
+			V = abs((x-y)/z);
+			cout << "\nThe value of V is " << V << "!" << endl;
+			}
+			  else 
+		  	{
+			  V = x - (sqrt(y+z));
+		  	cout << "\nThe value of V is " << V << "!" << endl;
+		  	}
+		  	break;
+	}
+		if(x>2) 
+		{
+		V = x+y+z;
+		cout << "\nThe value of V is " << V << "!" <<  endl;
+		}
+		
+		_getch();
+		return 0;
+}
