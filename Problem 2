@@ -1,0 +1,37 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double DemandCharge, LateCharge, WaterConsumption, UnpaidBalance, Bill, Water;
+	
+	DemandCharge = 35;
+	LateCharge = 20;
+	cout << "Compute your water bill here!" << endl;
+	cout << "\nGallons of water used: "; 
+	cin >> Water;
+	cout << "\nUnpaid Balance: "; 
+	cin >> UnpaidBalance;
+	
+	if (UnpaidBalance > 0)
+	{
+		WaterConsumption = Water * 1.10;
+		Bill = DemandCharge + WaterConsumption + UnpaidBalance + LateCharge;
+		cout << "\nThe water bill for this month: Php " << Bill << endl;
+		cout << "\nbayad bayad din mga sir :p";
+	}
+	
+	else 
+	{
+		WaterConsumption = Water * 1.10;
+		Bill = DemandCharge + WaterConsumption;
+		cout << "\nThe water bill for this month: Php " << Bill << endl;
+		
+	}
+	
+	_getch();
+	return 0;
+
+}
