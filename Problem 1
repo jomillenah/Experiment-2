@@ -1,0 +1,39 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int Package, PackageA, PackageB, PackageC, Hours;
+      PackageA = 995;
+      PackageB = 1495;
+      PackageC = 1995;
+    
+   cout << "Welcome to Aling Puring's Internet Services! :)'" << endl; 
+   cout << endl;
+   
+   cout<< "1. Package A: For P995/mo 10 hrs of access are provided. (Additional hours are P20/hr)" << endl;
+   cout<< "2. Package B: For P1495/mo 20 hrs of access are provided. (Additional hours are P10/hr)" << endl;
+   cout<< "3. Package C: For P1995/mo of unlimited access is provided";
+   
+   cout << "\n\nPlease choose a package (enter 1, 2 or 3 only): " ;
+        cin >> Package;
+		
+	cout << "\nTotal number of hours used for this month: " ;
+        cin >> Hours;
+        
+        if (Package == 1)
+            cout << "\nBill for this month: Php " << PackageA + (Hours - 10) * 20 << endl;
+        
+        else if (Package == 2)
+            cout << "\nBill for this month: Php " << PackageB + (Hours - 20) * 10 << endl;
+        
+        else if (Package == 3)
+            cout << "\nBill for this month: Php " << PackageC << endl;
+    
+    cout << "\nThank you for availing Aling Puring's Internet Services!" << endl;
+    
+   _getch();
+    return 0;
+}
