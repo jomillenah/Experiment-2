@@ -1,0 +1,29 @@
+#include <iostream>  
+using namespace std;  
+int main() 
+{  
+  int  a, b, c, x,  sequence;
+  
+  a = 0;
+  b = 1;
+  
+  cout << "Please enter the number of terms in the Fibonacci sequence: " ;
+  cin >> sequence ;
+  
+  cout << "\nFibonacci Numbers: " << endl;
+  
+  for ( x = 0 ; x < sequence ; x++)
+	{
+		if (x <= 1)
+		c = x;
+		else
+		{
+			c = a + b;
+			a = b;
+			b = c;
+		}
+	cout << c << " ";
+	}
+	return 0;
+	  
+}
